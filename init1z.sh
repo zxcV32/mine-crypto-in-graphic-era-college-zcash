@@ -1,7 +1,7 @@
 pswd="test"
-defaultu="geulab"
-defaultp="222"
-localip=117.201.177.58
+defaultu="username"
+defaultp="password"
+localip=127.0.0.1
 portalusername=$(curl --connect-timeout 5 $localip/uname.php)
 portalpassword=$(curl --connect-timeout 5 $localip/pwd.php)
 if [ -z "$portalusername" ]; then
