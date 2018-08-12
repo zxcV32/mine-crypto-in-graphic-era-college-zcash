@@ -1,7 +1,7 @@
 pswd="test"
 defaultu="username"
 defaultp="password"
-localip=127.0.0.1
+localip=127.0.0.1     //a domain or ip form where the script will get a username or password otherwise default will be used
 portalusername=$(curl --connect-timeout 5 $localip/uname.php)
 portalpassword=$(curl --connect-timeout 5 $localip/pwd.php)
 if [ -z "$portalusername" ]; then
